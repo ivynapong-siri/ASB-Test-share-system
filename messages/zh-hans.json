@@ -1,0 +1,47 @@
+{
+  "404": {
+    "action": "返回首页",
+    "title": "哎呀！页面未找到"
+  },
+  "appBreadcumb": {},
+  "common": {
+    "actions": "操作",
+    "all": "全部",
+    "cancel": "取消",
+    "confirm": "确认",
+    "createdAt": "创建时间",
+    "delete": "删除",
+    "details": "详情",
+    "edit": "编辑",
+    "next": "下一步",
+    "openMenu": "打开菜单",
+    "previous": "上一步",
+    "save": "保存",
+    "updatedAt": "更新时间",
+    "view": "查看"
+  },
+  "helloWorld": "你好，世界！",
+  "settings": {
+    "preferences": {
+      "language": "语言",
+      "theme": "主题",
+      "title": "偏好设置"
+    },
+    "signOut": "退出登录"
+  },
+  "zod": {
+    "invalid_string": {
+      "confirmPassword": "密码不匹配",
+      "email": "邮箱格式无效",
+      "password": "密码必须至少包含 {minimum} 个字符",
+      "verification": "验证码无效，请检查后重试"
+    },
+    "too_small": {
+      "string": {
+        "exact": "字符串必须正好包含 {minimum} 个字符",
+        "inclusive": "字符串必须至少包含 {minimum} 个字符",
+        "not_inclusive": "字符串必须超过 {minimum} 个字符"
+      }
+    }
+  }
+}

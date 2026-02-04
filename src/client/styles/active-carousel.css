@@ -1,0 +1,232 @@
+.activeSwiper img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.tag {
+  width: 7.4rem;
+  padding: 1rem 2rem 1rem 0;
+  position: absolute;
+  left: -1;
+  bottom: 0;
+  align-items: flex-end;
+  justify-content: center;
+  background: var(--tag-bg, white);
+  border-radius: 0 2.4rem 0 0;
+}
+
+.tag::after,
+.curve_one {
+  width: 2rem;
+  height: 2rem;
+  position: absolute;
+  background: transparent;
+  border-bottom-left-radius: 1.75rem;
+  box-shadow: -0.4rem 0.3rem 0 0.3rem var(--shadow-color, white);
+}
+
+.tag::after {
+  content: "";
+  top: -1.98rem;
+  left: 0;
+}
+
+.curve_one {
+  bottom: 0;
+  left: auto;
+  box-shadow: -0.4rem 0.3rem 0 0.3rem var(--shadow-color, white);
+}
+
+.programSwiper .swiper-slide {
+  margin-right: 0rem;
+}
+
+@media (max-width: 1024px) {
+  .activeSwiper .swiper-slide-active {
+    /* margin-right: 5rem !important; */
+    max-width: fit-content;
+  }
+}
+
+@media (max-width: 640px) {
+  .activeSwiper .swiper-slide-active {
+    /* margin-right: 6rem !important; */
+    max-width: fit-content;
+  }
+}
+
+@media (max-width: 420px) {
+  .activeSwiper .swiper-slide-active {
+    /* margin-right: 2rem !important; */
+    max-width: fit-content;
+  }
+}
+
+.programSwiper .swiper-slide-active {
+  margin-right: 9.5rem !important;
+}
+@media (max-width: 1440px) {
+  .programSwiper .swiper-slide-active {
+    margin-right: 10rem !important;
+  }
+}
+
+@media (max-width: 1024px) {
+  .programSwiper .swiper-slide-active {
+    margin-right: 4rem !important;
+  }
+}
+@media (max-width: 768px) {
+  .programSwiper .swiper-slide-active {
+    margin-right: 3rem !important;
+  }
+}
+
+@media (max-width: 640px) {
+  .programSwiper .swiper-slide-active {
+    margin-right: 1rem !important;
+    max-width: fit-content;
+  }
+}
+
+@media (max-width: 320px) {
+  .programSwiper .swiper-slide-active {
+    margin-right: 0.5rem !important;
+    max-width: fit-content;
+  }
+}
+
+.facilities-swiper-container {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.sport-facilities-swiper-slide {
+  width: 300px;
+  height: 420px;
+  margin: auto;
+  transition: all 500ms ease-in-out;
+  border-radius: 50px;
+  overflow: hidden;
+
+  &.swiper-slide-active {
+    width: 700px;
+    height: 500px;
+  }
+}
+
+@media (max-width: 767px) {
+  .sport-facilities-swiper-slide {
+    width: 360px !important;
+    height: 324px !important;
+  }
+  .sport-facilities-swiper-slide.swiper-slide-active {
+    width: 360px !important;
+    height: 390px !important;
+  }
+}
+
+.swiper-slide__content {
+  height: 100%;
+  width: 100%;
+  border-radius: 50px;
+  position: relative;
+  overflow: hidden;
+}
+
+.school-gallery-swiper-slide__content {
+  height: 100%;
+  width: 100%;
+  border-radius: 40px;
+  position: relative;
+  overflow: hidden;
+}
+
+.gallery-swiper-slide {
+  height: 390px !important;
+  width: 620px !important;
+  margin: auto;
+  transition: all 500ms ease-in-out;
+  border-radius: 40px;
+  overflow: hidden;
+
+  &.swiper-slide-active {
+    width: 790px !important;
+    height: 500px !important;
+  }
+}
+
+@media (max-width: 1440px) {
+  .gallery-swiper-slide {
+    width: 620px !important;
+    height: 390px !important;
+  }
+  .gallery-swiper-slide.swiper-slide-active {
+    width: 790px !important;
+    height: 500px !important;
+  }
+}
+
+@media (max-width: 1024px) {
+  .gallery-swiper-slide {
+    width: 380px !important;
+    height: 300px !important;
+  }
+  .gallery-swiper-slide.swiper-slide-active {
+    width: 500px !important;
+    height: 350px !important;
+  }
+}
+
+@media (max-width: 767px) {
+  .gallery-swiper-slide {
+    width: 300px !important;
+    height: 200px !important;
+  }
+  .gallery-swiper-slide.swiper-slide-active {
+    width: 360px !important;
+    height: 220px !important;
+  }
+}
+
+.key-feature-swiper-slide {
+  width: max-content;
+}
+
+.key-feature-visible {
+  overflow: visible;
+}
+
+.other-facilities-swiper-slide {
+  width: 315px;
+  height: 410px;
+  border-radius: 50px;
+  overflow: hidden;
+  margin: auto;
+
+  &.swiper-slide-active {
+    width: 440px;
+    height: 570px;
+  }
+}
+
+@media (max-width: 1023px) {
+  .other-facilities-swiper-slide {
+    width: 360px !important;
+    height: 289px !important;
+  }
+  .other-facilities-swiper-slide.swiper-slide-active {
+    width: 360px !important;
+    height: 467px !important;
+  }
+}
+
+.other-swiper-slide__content {
+  height: 100%;
+  width: 100%;
+  border-radius: 50px;
+  position: relative;
+  overflow: hidden;
+}

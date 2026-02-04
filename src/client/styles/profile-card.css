@@ -1,0 +1,22 @@
+.card-with-curve {
+  position: relative;
+  width: 300px;
+  height: 100vh;
+  background-color: #f5f8f9; /* Adjust to match your main background */
+  overflow: hidden;
+}
+
+/* Left curve */
+.card-with-curve::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: -40px;
+  transform: translateY(-50%);
+  width: 80px;
+  height: 160px;
+  background-color: #f5f8f9;
+  border-radius: 100px;
+  box-shadow: inset 20px 0 0 0 #2f3542; /* Creates the "cut-in" illusion */
+  z-index: 1;
+}

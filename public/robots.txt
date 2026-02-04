@@ -1,0 +1,68 @@
+User-agent: *
+Allow: /
+Disallow: /wp-admin/
+Disallow: /wp-includes/
+Disallow: /wp-content/plugins/
+Disallow: /wp-content/cache/
+Disallow: /wp-json/
+Disallow: /xmlrpc.php
+Disallow: /cgi-bin/
+Disallow: /*?*
+Disallow: /*&*
+Allow: /wp-content/uploads/
+Allow: /wp-content/themes/
+
+Disallow: /debug/
+Disallow: /en/debug/
+Disallow: /zh-hans/debug/
+Disallow: /th/debug/
+Disallow: /ja/debug/
+Disallow: /ko/debug/
+
+# OpenAI
+User-agent: GPTBot
+Allow: /
+
+# ChatGPT Browsing Agent
+User-agent: ChatGPT-User
+Allow: /
+
+# Perplexity AI
+User-agent: PerplexityBot
+Allow: /
+
+# Claude / Anthropic
+User-agent: ClaudeBot
+Allow: /
+
+# Google AI Extended
+User-agent: Google-Extended
+Allow: /
+
+# Meta / Facebook
+User-agent: Meta-ExternalAgent
+Allow: /
+
+# Apple
+User-agent: Applebot
+Allow: /
+User-agent: Applebot-Extended
+Allow: /
+
+# Amazon AI
+User-agent: Amazonbot
+Allow: /
+
+# ByteDance / TikTok
+User-agent: Bytespider
+Allow: /
+
+# Common Crawl
+User-agent: CCBot
+Allow: /
+
+# Catch-all for other AI/LLM crawlers
+User-agent: *-LLM
+Allow: /
+
+Sitemap: https://www.asbsk.ac.th/sitemap.xml

@@ -1,0 +1,47 @@
+{
+  "404": {
+    "action": "ホームに戻る",
+    "title": "おっと！ページが見つかりません"
+  },
+  "appBreadcumb": {},
+  "common": {
+    "actions": "操作",
+    "all": "すべて",
+    "cancel": "キャンセル",
+    "confirm": "確認",
+    "createdAt": "作成日",
+    "delete": "削除",
+    "details": "詳細",
+    "edit": "編集",
+    "next": "次へ",
+    "openMenu": "メニューを開く",
+    "previous": "前へ",
+    "save": "保存",
+    "updatedAt": "更新日",
+    "view": "表示"
+  },
+  "helloWorld": "こんにちは、世界！",
+  "settings": {
+    "preferences": {
+      "language": "言語",
+      "theme": "テーマ",
+      "title": "設定"
+    },
+    "signOut": "ログアウト"
+  },
+  "zod": {
+    "invalid_string": {
+      "confirmPassword": "パスワードが一致しません",
+      "email": "無効なメールアドレス形式です",
+      "password": "パスワードは最低 {minimum} 文字必要です",
+      "verification": "確認コードが無効です。ご確認の上、再試行してください。"
+    },
+    "too_small": {
+      "string": {
+        "exact": "文字列は正確に {minimum} 文字でなければなりません",
+        "inclusive": "文字列は最低 {minimum} 文字必要です",
+        "not_inclusive": "文字列は {minimum} 文字を超える必要があります"
+      }
+    }
+  }
+}

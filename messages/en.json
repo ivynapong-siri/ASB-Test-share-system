@@ -1,0 +1,47 @@
+{
+  "404": {
+    "action": "Find My Way Back",
+    "title": "Oops! Page Not Found"
+  },
+  "appBreadcumb": {},
+  "common": {
+    "actions": "Actions",
+    "all": "All",
+    "cancel": "Cancel",
+    "confirm": "Confirm",
+    "delete": "Delete",
+    "details": "Details",
+    "edit": "Edit",
+    "next": "Next",
+    "openMenu": "Open Menu",
+    "previous": "Previous",
+    "save": "Save",
+    "view": "View",
+    "createdAt": "Created At",
+    "updatedAt": "Updated At"
+  },
+  "helloWorld": "Hello world!",
+  "settings": {
+    "preferences": {
+      "language": "Language",
+      "theme": "Theme",
+      "title": "Preferences"
+    },
+    "signOut": "Sign Out"
+  },
+  "zod": {
+    "invalid_string": {
+      "confirmPassword": "Passwords do not match",
+      "email": "Invalid Email Format",
+      "password": "Password must be at least {minimum} character(s)",
+      "verification": "Invalid verification code. Please check and try again."
+    },
+    "too_small": {
+      "string": {
+        "exact": "String must contain exactly {minimum} character(s)",
+        "inclusive": "String must contain at least {minimum} character(s)",
+        "not_inclusive": "String must contain over {minimum} character(s)"
+      }
+    }
+  }
+}

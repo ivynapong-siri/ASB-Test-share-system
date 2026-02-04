@@ -1,0 +1,11 @@
+version: "3.8"
+services:
+  american-school-next:
+    container_name: american-school-next-production
+    image: american-school-next-production
+    build:
+      context: ../..
+      dockerfile: scripts/docker/dockerfile
+    restart: always
+    ports:
+      - "9090:9090"

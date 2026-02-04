@@ -1,0 +1,41 @@
+# Install dependencies
+FROM node:23-alpine AS deps
+# Check https://github.com/nodejs/docker-node#nodealpine to understand why libc6-compat might be needed.
+RUN apk add --no-cache libc6-compat
+WORKDIR /app
+
+COPY package.json package-lock.json ./ 
+RUN npm i --legacy-peer-deps
+
+
+# Build image
+FROM node:23-alpine AS builder
+
+WORKDIR /app
+
+ENV NEXT_TELEMETRY_DISABLED=1
+COPY --from=deps /app/node_modules ./node_modules
+COPY . .
+
+RUN npm run build
+
+
+# Runner (production) image, copy all the files
+FROM node:23-alpine AS runner
+WORKDIR /app
+
+ENV NODE_ENV=production
+RUN npm i sharp
+RUN addgroup --system --gid 1001 nodejs
+RUN adduser --system --uid 1001 nextjs
+
+COPY --from=builder --chown=nextjs:nodejs /app/next.config.ts ./
+COPY --from=builder --chown=nextjs:nodejs /app/public ./public
+COPY --from=builder --chown=nextjs:nodejs /app/.next/standalone ./
+COPY --from=builder --chown=nextjs:nodejs /app/.next/static ./.next/static
+
+USER nextjs
+EXPOSE 9090
+ENV PORT=9090
+
+CMD ["node", "server.js"]

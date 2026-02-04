@@ -1,0 +1,10 @@
+{
+  "recommendations": [
+    "esbenp.prettier-vscode",
+    "ms-vscode.vscode-typescript-next",
+    "bradlc.vscode-tailwindcss",
+    "prisma.prisma",
+    "yoavbls.pretty-ts-errors",
+    "lokalise.i18n-ally"
+  ]
+}

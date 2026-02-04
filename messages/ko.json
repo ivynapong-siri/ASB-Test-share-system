@@ -1,0 +1,47 @@
+{
+  "404": {
+    "action": "홈으로 돌아가기",
+    "title": "앗! 페이지를 찾을 수 없습니다"
+  },
+  "appBreadcumb": {},
+  "common": {
+    "actions": "작업",
+    "all": "전체",
+    "cancel": "취소",
+    "confirm": "확인",
+    "createdAt": "생성일",
+    "delete": "삭제",
+    "details": "상세보기",
+    "edit": "편집",
+    "next": "다음",
+    "openMenu": "메뉴 열기",
+    "previous": "이전",
+    "save": "저장",
+    "updatedAt": "수정일",
+    "view": "보기"
+  },
+  "helloWorld": "안녕하세요, 세계!",
+  "settings": {
+    "preferences": {
+      "language": "언어",
+      "theme": "테마",
+      "title": "환경 설정"
+    },
+    "signOut": "로그아웃"
+  },
+  "zod": {
+    "invalid_string": {
+      "confirmPassword": "비밀번호가 일치하지 않습니다",
+      "email": "잘못된 이메일 형식입니다",
+      "password": "{minimum}자 이상이어야 합니다",
+      "verification": "인증 코드가 유효하지 않습니다. 다시 시도하세요."
+    },
+    "too_small": {
+      "string": {
+        "exact": "문자열은 정확히 {minimum}자여야 합니다",
+        "inclusive": "문자열은 최소 {minimum}자 이상이어야 합니다",
+        "not_inclusive": "문자열은 {minimum}자보다 많아야 합니다"
+      }
+    }
+  }
+}

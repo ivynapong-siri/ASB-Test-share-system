@@ -1,0 +1,18 @@
+version: "3.8"
+services:
+  american-school-next:
+    container_name: american-school-next-staging
+    image: american-school-next-staging
+    logging:
+      driver: awslogs
+      options:
+        awslogs-region: ap-southeast-1
+        awslogs-group: american-school-staging-logs
+        awslogs-create-group: "true"
+        awslogs-stream: docker-american-school-staging-stream
+    build:
+      context: ../..
+      dockerfile: scripts/docker/dockerfile
+    restart: always
+    ports:
+      - "9090:9090"

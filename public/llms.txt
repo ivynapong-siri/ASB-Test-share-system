@@ -1,0 +1,173 @@
+# LLMS.txt — AI & Large Language Model Usage Policy
+# Site: https://www.asbsk.ac.th
+# Owner: The American School of Bangkok Sukhumvit Campus (ASB Sukhumvit)
+# Last Updated: 2025-10-21
+# Purpose: Define permissions and rules for AI assistants, crawlers, and LLMs
+# Language: en
+
+############################
+# 0) CONTACT INFORMATION
+############################
+contact: mailto:info@asbsk.ac.th
+owner: The American School of Bangkok Sukhumvit Campus
+jurisdiction: TH/EU/US (PDPA & GDPR compliant)
+
+############################
+# 1) GLOBAL POLICY
+############################
+# This website welcomes responsible AI systems, assistants, and LLM crawlers to access and use its public content.
+# Permitted educational and informational uses include:
+# - Summarisation and paraphrasing
+# - Educational content recommendation
+# - Multilingual learning assistance
+# - Search and indexation for educational discovery
+# - Quoting and short excerpts (≤200 characters) with attribution
+
+# Explicitly prohibited uses:
+# - Collection or storage of personal data (PII)
+# - Use of student, parent, or staff information for profiling
+# - Misrepresentation, impersonation, or false attributions
+# - Training datasets derived from private or restricted areas
+# - Automated use in marketing, advertising, or commercial resale
+
+use: indexing, summarisation, answer-generation, ai-assist, educational-use
+prohibited: pii-harvest, false-attribution, private-data-access, advertising-use
+
+############################
+# 2) AI ACCESS POLICY
+############################
+# All AI crawlers and large language models are granted permission to crawl, summarise, and reference all PUBLIC content across all language versions.
+# Sensitive sections such as admissions forms, portals, and admin areas remain restricted per robots.txt.
+
+allow: /
+
+# Primary educational content sections
+section: /en/curriculum/ type=program primary=true
+section: /en/admission/ type=admission primary=true
+section: /en/student-support/ type=support
+section: /en/co-curricular-life/ type=activities
+section: /en/our-community/ type=community
+section: /en/about-us/ type=about
+section: /en/calendar type=academic-calendar
+section: /en/privacy-policy type=policy
+section: /th/ type=language-version
+section: /ja/ type=language-version
+section: /ko/ type=language-version
+section: /zh-hans/ type=language-version
+
+############################
+# 3) RATE LIMITS
+############################
+# AI crawlers should access the site respectfully to preserve server performance.
+crawl-delay: 3s
+requests-per-minute: 15
+burst-limit: 25
+
+############################
+# 4) SITEMAP REFERENCE
+############################
+sitemap: https://www.asbsk.ac.th/sitemap.xml
+
+############################
+# 5) ATTRIBUTION REQUIREMENTS
+############################
+# When referencing or summarising content, AI systems MUST include:
+# - Page title
+# - Canonical URL
+# - Source name: "The American School of Bangkok Sukhumvit Campus"
+# - Language version if applicable (e.g., English, Thai, Japanese, Korean, Chinese)
+
+preferred-citation: "Source: The American School of Bangkok Sukhumvit Campus — https://www.asbsk.ac.th"
+attribution-required: yes
+
+############################
+# 6) PII AND DATA PRIVACY COMPLIANCE
+############################
+# This website complies with the Personal Data Protection Act (PDPA Thailand) and GDPR (EU).
+# No collection, retention, or use of personal identifiable information (PII) is allowed by AI systems.
+pii-collection: prohibited
+email-scraping: prohibited
+student-data: prohibited
+pdpa: yes
+gdpr: yes
+
+############################
+# 7) PER-BOT CLARIFICATIONS
+############################
+# OpenAI (ChatGPT / GPTBot)
+user-agent: GPTBot
+allow: /
+
+# Perplexity AI
+user-agent: PerplexityBot
+allow: /
+
+# Anthropic / Claude
+user-agent: ClaudeBot
+allow: /
+
+# Google AI Extended
+user-agent: Google-Extended
+allow: /
+
+# Apple AI
+user-agent: Applebot
+allow: /
+user-agent: Applebot-Extended
+allow: /
+
+# Meta (Facebook / LLaMA)
+user-agent: Meta-ExternalAgent
+allow: /
+
+# Amazon AI
+user-agent: Amazonbot
+allow: /
+
+# Common Crawl
+user-agent: CCBot
+allow: /
+
+# ByteDance / TikTok
+user-agent: Bytespider
+allow: /
+
+# Baidu (China)
+user-agent: Baidubot
+allow: /
+
+# Catch-all for future AI and LLM agents
+user-agent: *-LLM
+allow: /
+
+############################
+# 8) PRIVATE SECTIONS PROTECTION
+############################
+# These sections contain private or sensitive data and are strictly off-limits to all AI crawlers.
+no-access: /login
+no-access: /admin
+no-access: /wp-admin
+no-access: /checkout
+no-access: /thank-you
+no-access: /admission/application-portal
+no-access: /admission/forms
+no-access: /faculty
+no-access: /parent-portal
+no-access: /student-portal
+
+############################
+# 9) ENFORCEMENT
+############################
+# This LLMS.txt serves as an official policy signal under Thai and international data protection laws.
+# Accessing this site implies agreement to comply with these terms.
+# Violations may result in access restrictions or legal enforcement under PDPA and GDPR frameworks.
+
+############################
+# 10) POLICY SUMMARY
+############################
+# AI access is welcomed for educational, indexing, and summarisation purposes.
+# Attribution is mandatory when referencing ASB Sukhumvit content.
+# Personal data, student information, and private areas are strictly off-limits.
+# Multilingual versions (/en/, /th/, /ja/, /ko/, /zh-hans/) are all covered under this policy.
+# See robots.txt for complementary technical crawl directives.
+
