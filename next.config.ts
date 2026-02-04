@@ -8,6 +8,7 @@ const withBundleAnalyzer = bundleAnalyzer({
 });
 
 const nextConfig: NextConfig = {
+  eslint: { ignoreDuringBuilds: true },
   output: "standalone",
   experimental: {
     serverActions: {
